@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(47, 49, 45);
+  line-height: 1.6; /* Altura de línea para un espaciado cómodo entre líneas de texto */
+
+  margin-bottom: 200px;
+}
+
+h1 {
+  background-color: rgb(51, 120, 54);
+  text-align: center;
+  padding: 15px;
+  font-family: system-ui;
+  color: rgb(167, 167, 167);
+  text-shadow: 2px 2px 4px rgb(40, 55, 44);
+}
+
+header {
+  background-image: url(../assets/bannerC.jpg);
+  height: 350px;
+  width: 100vw;
+}
+nav {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 120px;
+}
+
+a {
+  max-width: 150px;
+  text-decoration: none;
+  background-color: rgb(43, 43, 39);
+  padding: 11px;
+  color: wheat;
+  border-radius: 17px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a:hover {
+  background-color: rgb(43, 43, 39);
+  background-color: #3f9249ad;
+  color: rgb(217, 191, 158);
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+a:active {
+  background-color: rgb(13, 136, 62);
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  background-color: rgb(213, 128, 16);
+  color: aliceblue;
+  font-family: monospace;
+  padding: 10px;
+  animation: pulse 1s infinite alternate;
+  font-size: 22px;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#logo {
+  width: 22vw;
+  margin-left: 15px;
+  animation: changeColor 3s infinite alternate;
+}
+
+@keyframes changeColor {
+  from {
+    filter: hue-rotate(0deg); /* Rotación del matiz */
+  }
+  to {
+    filter: hue-rotate(360deg); /* Rotación completa del matiz */
+  }
+}
+
+.contenedor img {
+  float: left;
+  margin-right: 10px;
+}
+
+.info {
+  color: darkgrey;
+  padding: 20px;
+  margin-left: 250px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 20px;
+  display: inline;
+  font-size: 20px;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(249, 184, 64);
+  position: relative;
+  animation: slide 3s infinite alternate;
+}
+@keyframes slide {
+  0% {
+    left: 0; /* Posición inicial */
+  }
+  100% {
+    left: 20px; /* Posición final */
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(209, 97, 53);
+  color: aliceblue;
+  font-family: monospace;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.rules {
+  color: azure;
+  font-size: 19px;
+  width: 70vw;
+  padding-left: 15%;
+  font-style: normal;
+}
+
+.listaAlfabetica {
+  list-style-type: lower-alpha;
+}
+
+dt {
+  font-weight: bold;
+  color: gold;
+}
+
+ol,
+ul,
+dl,
+li,
+dt {
+  margin-bottom: 30px; /* Espacio entre listas )*/
+}
+
+.fila1 {
+  text-indent: 50px;
+}
+
+.subRules {
+  text-align: center;
+  font-size: 23px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+/*Estilos tabla*/
+table {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+  border-collapse: collapse;
+  margin-top: 150px;
+  margin-top: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+td,
+th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.tabla-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.tabla-container table {
+  width: 80%;
+}
+.borde-externo {
+  border-collapse: collapse;
+  border: 2px solid transparent; /* Borde transparente inicial */
+  box-shadow: 0 0 10px rgba(67, 219, 143, 0.8),
+    /* Primera sombra */ 0 0 15px rgba(0, 255, 255, 0.6),
+    /* Segunda sombra */ 0 0 20px rgba(0, 255, 255, 0.4),
+    /* Tercera sombra */ 0 0 25px rgba(0, 255, 255, 0.2); /* Cuarta sombra */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.borde-externo th,
+.borde-externo td {
+  border: none;
+  padding: 15px;
+}
+
+.detallesJuegos {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+.info {
+  color: white;
+  padding: 20px;
+  margin-left: 250px;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.datosContacto {
+  display: flex;
+}
+
+.datosContacto p {
+  margin-right: 125px; /* Espacio entre los párrafos */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.girar {
+  width: 200px; /* Ancho de las imágenes */
+  height: 200px; /* Altura de las imágenes */
+  margin: 20px; /* Espacio entre las imágenes */
+  transition: transform 0.5s ease; /* Transición suave de la propiedad transform */
+}
+
+.girar:hover {
+  transform: rotate(
+    360deg
+  ); /* Rotación completa de 360 grados al hacer hover */
+}
